@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Document title in browser tabs -->
+  <title>GUTS forum site for all themes</title>
+
+  <!-- Document Favicon in browser tabs -->
+	<link rel="shortcut icon" href="assets/icon.ico" type="image/x-icon">
+
+  <!-- SEO -->
+	<meta name="description" content="Forum site for discussion">
+	<meta name="keywords" content="Guts forum descussion questions">
+	<meta name="author" content="Lisbyoud Erased">
+
+  <!-- For mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Use latest version of IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Local styles fonts -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Remixicon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header__left">
+      <a href="index.html" class="left__logo">
+        <img width="150" height="30" viewBox="0 0 150 30" fill="none" src="assets/images/default-monochrome-white.svg" alt="logo">
+      </a>
+        <ul class="header__nav">
+          <li><a href="index.html" onclick="toggleMenu();">Home</a></li>
+          <li class="group">
+            <a href="#group" onclick="toggleMenu();">Group</a>
+              <div class="group__nav">
+                <div class="group__dropdown">
+                  <div class="dropdown__header">Game</div>
+                    <div class="dropdown__nav">
+                      <a href="#">
+                        <div class="nav__img">
+                          <img src="assets/images/warframe.jpg">
+                        </div>
+                        <span>Warframe</span>
+                      </a>
+                      <a href="#">
+                        <div class="nav__img">
+                          <img src="assets/images/genshin_impact.jpg">
+                        </div>
+                        <span>Genshin Impact</span>
+                      </a>
+                      <a href="#">
+                        <div class="nav__img">
+                          <img src="assets/images/warhammer40k.jpg">
+                        </div>
+                        <span>Warhammer40k</span>
+                      </a>
+                      <a href="#">
+                        <div class="nav__img">
+                          <img src="assets/images/blue_archive.jpg">
+                        </div>
+                        <span>Blue Archive</span>
+                      </a>
+                    </div>
+                </div>
+              </div> 
+          </li>
+        </ul>          
+    </div>
+   
+    <div class="header__main">
+
+      <div class="topbar">
+				<!-- search -->
+				<div class="search">
+				<label>
+					<input type="text" placeholder="Search something..." name="">
+					<i class="ri-search-line"></i>
+				</label>	
+				</div>
+		
+			</div> 
+
+    </div>
+    <div class="header__right">
+      <ul class="header__nav">
+        <li><a href="#post" onclick="toggleMenu();"><i class="ri-edit-2-line"></i></a></li>
+      <div class="notification">
+        <li><a href="#notification" onclick="toggleMenu();"><i class="ri-bell-line"></i></a></li>
+        <span data-count="56" class="header-notification__num"></span>
+      </div>
+      </ul>  
+				<!-- userImg -->
+				<div class="user">
+					<img src="assets/icon.png">
+          <div class="user__nav">
+            <div class="user__dropdown">
+              <div class="dropdown__header">My Information</div>
+                <div class="dropdown__nav">
+                  <a href="#"><i class="ri-user-3-line"></i>Profile</a>
+                  <a href="#"><i class="ri-login-circle-line"></i>Log in</a>
+                  <a href="#"><i class="ri-user-add-line"></i>Log up</a>
+                </div>
+                <div class="dropdown__nav">
+                  <a href="#"><i class="ri-logout-box-line"></i>Log out</a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div> 
+  </header>
+
+
+<main class="forum">
+
+  <section class="forum__left"></section>
+  
+  <section class="forum__main">
+      <div class="main__details">
+        <ul class="main__nav">
+          <li><a href="#follow" onclick="toggleMenu();">Follow</a></li>
+          <li><a href="#recommended" onclick="toggleMenu();">Recommended</a></li>
+          <li><a href="#events" onclick="toggleMenu();">Events</a></li>
+        </ul> 
+        
+        <div class="main__group">
+          <div class="post">
+            <div class="post__header">
+              <div class="userinfo">
+                <a href="#" class="userinfo__card">
+                  <div class="card__usericon">
+                    <img src="assets/icon.png">
+                  </div>
+                  <div class="card__cardinfo">
+                    <span class="cardinfo__header">MoonstePi</span>
+                    <p class="cardinfo__data">1d ago • Warframe</p>
+                  </div>
+                </a>
+                <div class="follow">
+                  <span class="follow__button">Follow</span>
+                </div>
+              </div>
+            </div>
+            <div class="post__article">
+              <div class="post__images">
+                <div class="image__box">
+                  <img src="assets/images/anime.jpg">
+                </div>
+
+                <div class="modal">
+                  <span class="close"><i class="fas fa-times"></i></span>
+                  <div class="modalContent">
+                    <img src="" class="modalImg" />
+                    <span class="modalTxt"></span>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="post__content">i might have the worst luck with pulls but i 
+                just pulled my OTP so I'm happy</a>
+            </div>
+            <div class="post__topic">
+              <div class="topic__label"><a href="#">#anime</a></div>
+              <div class="topic__label"><a href="#">#red</a></div>
+              <div class="topic__label"><a href="#">#art</a></div>
+            </div>
+            <div class="post__footer">
+              <div class="footer__data">
+                <div class="data__item">
+                  <i class="ri-eye-line"></i>
+                  <span>7,7k</span>
+                </div>
+
+                <div class="footer__right">
+                <div class="data__item">
+                  <i class="ri-chat-1-line"></i>
+                  <span>1k</span>
+                </div>
+                <div class="data__item">
+                  <i class="ri-thumb-up-line"></i>
+                  <span>7,7k</span>
+                </div>
+              </div>
+
+              </div>
+            </div>
+            <div class="post__comment">
+              <div class="comment">
+              <div class="comment__header"></div>
+              <div class="comment__content"></div>
+            </div>
+            </div>
+          </div>
+                
+        </div>
+
+      <div class="group__load">
+        <button type="button" class="load__button">
+          <span>Load more</span>
+        </button>
+      </div>
+
+      </div>
+    </div>
+  </section>
+  
+  <section class="forum__right">
+    <div class="right__details">
+      <div class="details__header">
+        <span>Post now~</span>
+        <span><i class="ri-todo-line"></i> Drafts</span>
+      </div>
+      <div class="details__action">
+        <a href="#" class="action__box">
+          <i class="ri-edit-2-line"></i>
+          <span class="box__content">Post</span>
+        </a>
+
+        <a href="#" class="action__box">
+          <i class="ri-landscape-line"></i>
+          <span class="box__content">Image</span>
+        </a>
+
+        <a href="#" class="action__box">
+          <i class="ri-video-add-line"></i>
+          <span class="box__content">Video</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="right__details">
+      <div class="details__header">
+        <span>Users Online</span>
+      </div>
+
+      <div class="users__online">
+      <div class="online__user">
+        <div class="userinfo">
+          <a href="#" class="userinfo__card">
+            <div class="card__usericon">
+              <img src="assets/icon.png">
+            </div>
+            <div class="card__cardinfo">
+              <span class="cardinfo__header">MoonstePi</span>
+              <p class="cardinfo__data">Online</p>
+            </div>
+          </a>
+          <div class="follow">
+            <span class="follow__button">+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="right__details">
+
+        <div class="slider-wrapper">
+          <i class="ri-arrow-drop-left-line" onclick="scrollleft()"></i>
+          <i class="ri-arrow-drop-right-line" onclick="scrollright()"></i>
+          <div class="slider">
+            <img id="slide-1" src="assets/images/wallpaper(1).webp" alt="slide">
+            <img id="slide-2" src="assets/images/wallpaper(2).webp" alt="slide">
+            <img id="slide-3" src="assets/images/wallpaper(3).webp" alt="slide">
+            <img id="slide-4" src="assets/images/wallpaper(4).webp" alt="slide">       
+          </div>
+          
+        </div>
+    </div>
+
+    <div class="right__details">
+      <div class="details__header">
+        <span>Official Information</span>
+      </div>
+      <div class="details__rules"><a href="#rules"><i class="ri-magic-line"></i> GUTS Community Rules</a></div>
+    </div>
+
+    <div class="footer">
+      <div class="footer__header">
+        <span>Contact Us</span>
+      </div>  
+      <div class="footer__textbox">
+        <p><span>Warframe</span><span>warframe@guts.com</span></p>
+        <p><span>Genshin Impact</span><span>genshin_impact@guts.com</span></p>
+        <p><span>Warhammer40k</span><span>wh40k@guts.com</span></p>
+        <p><span>Blue Archive</span><span>bluearchive@guts.com</span></p>       
+      </div>
+      <div class="footer__policy">
+        <p><a href="#">Forums Privacy Policy</a></p>
+        <p><a href="#">Forums Terms of Service</a></p>
+        <p><a href="#">Forums Privacy Policy</a></p>
+        <p><a href="#">Forums Privacy Policy</a></p>
+      </div> 
+      <div class="footer__copyright">
+        <p>Copyright © 2023 All Rights Reserved<br>Lisbyoud Erased</p>
+      </div>   
+    </div>
+
+  </section>
+</main>
+  <script src="https://kit.fontawesome.com/7368c40b21.js" crossorigin="anonymous" ></script>
+  <!-- External scripts files -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

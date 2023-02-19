@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: OstrichSans-Heavy
+font link: https://www.fontsquirrel.com/fonts/ostrich-sans
+font author: Tyler Finck
+font author site: https://www.tylerfinck.com
+
+
+icon designer: Jesus Puertas
+icon designer link: /jesus53
+        
+{"bg":"#4D65F1","icon":"#ffffff","font":"#ffffff","slogan":"#ffffff"}
+      
