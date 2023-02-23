@@ -24,3 +24,20 @@ function scrollright(){
   var right = document.querySelector(".slider");
   right.scrollBy(100 , 0)
 }
+
+function scrollup(){
+  document.documentElement.scrollTop = 0;
+}
+const scrollUp = document.querySelector('.scrollup');
+window.addEventListener('scroll', () => {
+  if(window.pageYOffset > 100){
+    scrollUp.classList.add("active"); 
+  }
+  else{
+    scrollUp.classList.remove("active")
+  }
+});
+
+
+
+

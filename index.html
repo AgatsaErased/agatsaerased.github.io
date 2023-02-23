@@ -32,12 +32,23 @@
   <header class="header">
     <div class="header__left">
       <a href="index.html" class="left__logo">
-        <img width="150" height="30" viewBox="0 0 150 30" fill="none" src="assets/images/default-monochrome-white.svg" alt="logo">
+        <div class="logo__pc">
+          <img  width="150" height="30" viewBox="0 0 150 30" fill="none" src="assets/images/default-monochrome-white.svg" alt="logo">
+        </div>
+        <div class="logo__mobile">
+          <img  width="150" height="30" viewBox="0 0 150 30" fill="none" src="assets/images/logomobile.png" alt="logomobile">
+        </div>
       </a>
         <ul class="header__nav">
-          <li><a href="index.html" onclick="toggleMenu();">Home</a></li>
+          <li class="home__pc"><a href="index.html" >Home</a></li>
+          <li class="home__mobile">
+            <a href="index.html"><i class="ri-home-2-line"></i></a>
+          </li>
           <li class="group">
-            <a href="#group" onclick="toggleMenu();">Group</a>
+            <a href="#group">
+              <p class="group__pc">Group</p>
+              <p class="group__mobile"><i class="ri-global-line "></i><p>
+            </a>
               <div class="group__nav">
                 <div class="group__dropdown">
                   <div class="dropdown__header">Game</div>
@@ -84,7 +95,24 @@
 				</label>	
 				</div>
 		
-			</div> 
+			</div>
+      <ul>
+      <li class="search__mobile">
+        <a href="#search" onclick="toggleMenu();"><i class="ri-search-line"></i></a>
+          <div class="group__nav">
+            <div class="search__dropdown">
+                <div class="dropdown__nav">
+                  <div class="search__mobile">
+                    <label class="mobile__box">
+                      <input type="text" placeholder="Search something..." name="">
+                      <div class="search__button"><button>Search</button></div>
+                    </label>	
+                  </div>
+                </div>
+            </div>
+          </div> 
+      </li>
+      </ul>
 
     </div>
     <div class="header__right">
@@ -302,6 +330,11 @@
 
   </section>
 </main>
+<div class="scrollup" onclick="scrollup()">
+  <i class="ri-arrow-up-s-line"></i>
+</div>
+
+<script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
   <script src="https://kit.fontawesome.com/7368c40b21.js" crossorigin="anonymous" ></script>
   <!-- External scripts files -->
   <script src="assets/js/app.js"></script>
